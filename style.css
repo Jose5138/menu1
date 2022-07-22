@@ -1,0 +1,49 @@
+bodu,
+html
+{
+      margin: 0;
+      font-weight: 500;
+      font-size: 24px;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      background: #1b1b1b;
+}
+ul
+{
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+      list-style: none;
+      text-align: center;
+      background-color: white;
+}
+li
+{
+      position: relative;
+}
+a
+{
+      position: relative;
+      color: black;
+      text-transform: uppercase;
+      padding: 10px 10px 5px 10px;
+      text-decoration: none;
+      letter-spacing: 1.5px;
+}
+a::after
+{
+      position: absolute;
+      display: block;
+      content: "";
+      left: 50%;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background: none repeat scroll 0 0 transparent;
+      background-color: black;
+      transition: width 0.3s ease 0s,left 0.3s ease 0s;
+}
+a:hover::after
+{
+      width: 100%;
+      left: 0;
+}
